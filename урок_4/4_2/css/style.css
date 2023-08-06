@@ -1,0 +1,53 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.block_wrap {
+    position: relative;
+    width: 700px;
+    height: 600px;
+
+    padding: 10px;
+
+}
+
+.block {
+    height: 200px;
+    width: 200px;
+}
+
+.first_block {
+    position: absolute;
+    
+    z-index: 0;
+
+    background-color: orangered;
+    
+}
+
+.second_block {
+    position: absolute;
+    left: 140px;
+    top: 140px;
+    z-index: 1;
+
+    background-color: blue;
+
+}
+
+.third_block {
+    position: absolute;
+    left: 270px;
+    top: 270px;
+    z-index: 0;
+
+    background-color: aquamarine;
+
+}

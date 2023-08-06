@@ -1,0 +1,4 @@
+1 display: none
+2 visibility: hidden
+3 opasity: 0
+4 position: absolute

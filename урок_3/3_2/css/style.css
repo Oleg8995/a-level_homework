@@ -1,0 +1,23 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.block {
+    width: 350px;
+    height: 220px;
+
+    padding: 15px 10px 20px 10px;
+    margin-bottom: 30px;
+
+    border: 2px dashed red;
+
+    background-color: rgb(99, 207, 99);
+
+}

@@ -1,0 +1,398 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+   
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+
+    padding: 0 40px;
+
+    background-color: rgb(177, 146, 9);
+}
+
+.logo_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_img {
+    height: 90px;
+    width: 90px;
+}
+
+.logo_text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo_text-red {
+    color: red;
+    margin-right: -15px;
+}
+
+.menu_item {
+    margin: 15px 0;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+
+
+/* **************burger menu********** */
+
+ /* приховуємо чекбокс */
+ #menu__toggle {
+    opacity: 0;
+}
+    /* стилізуємо кнопку */
+.menu__btn {
+    display: flex; /* використовуємо flex для центрування вмісту */
+    align-items: center;  /* центруємо вміст кнопки */
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+    /* додаємо "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /* background-color: #616161; */
+    background-color: white;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+            /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+    /* элементи меню */
+.menu_item_link {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.menu_item_link:hover {
+    background-color: #CFD8DC;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    background-color: #616161;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: #616161;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #616161;
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+}
+
+    
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    transition-duration: .25s;
+}
+.menu__box {
+    transition-duration: .25s;
+}
+.menu_item_link {
+    transition-duration: .25s;
+}
+/* ********burger menu********** */
+
+
+/* *********** MAIN ************ */
+
+.main_conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_wrap {
+    display: flex;
+    flex-direction: column;
+
+    width: 1190px;
+
+    padding: 30px 0;
+}
+.main_header {
+    margin-top: 90px;
+}
+.text_title {
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+
+    line-height: 1.4;
+
+    padding: 0 15px;
+
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.main_block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.work_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    height: 450px;
+    border: 2px solid rgb(187, 149, 248);
+    border-radius: 10%;
+
+    padding: 0 10px 15px 10px;
+    margin: 20px 5px 0px 5px;
+}
+
+.work_block_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 15px 0 25px 0;
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(240, 189, 159);
+    border-radius: 50%;
+}
+
+.card_img {
+    width: 70px;
+    height: 70px;
+}
+
+.title_card {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.sidebar {
+    width: 210px;
+    text-align: center;
+}
+
+.text_card {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(82, 54, 109);
+    color: white;
+    border: none;
+
+    padding: 5px 75px;
+    border-radius: 19px;
+
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    background-color: rgb(129, 102, 155);
+    box-shadow: 0 0 10px rgb(43 42 44 / 75%);
+}
+
+.sidebar_left {
+    display: none;
+    order: -1;
+    background-color: rgb(198, 151, 241);
+}
+
+.sidebar_right {
+    display: none;
+    background-color: rgb(194, 247, 151);
+}
+
+/* *********** footer ************ */
+.footer {
+    height: 100px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+
+
+@media (min-width: 576px) {
+
+
+
+}
+
+@media (min-width: 768px) {
+
+    .btn {
+        padding: 5px 25px;
+    }
+    .sidebar_right {
+        display: block;
+        padding-top: 90px
+    }
+}
+
+@media (min-width: 850px) {
+
+    .text_title {
+        font-size: 20px;
+    }
+
+    .work_block {
+        width: 40%;
+        height: 400px;
+    }
+   
+}
+
+@media (min-width: 992px) {
+    .header {
+        position: relative;
+    }
+    .menu__box {
+        display: flex;
+        justify-content: space-between;
+        position: static;
+        width: auto;
+        padding: 10px 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    #menu__toggle ~ .menu__box {
+        visibility: visible;
+    }
+
+    .menu_item {
+        margin-right: 15px;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 15px 0px;
+    
+        transition: all 1.2s linear;
+    }
+
+    .menu_item:last-child {
+        margin-right: 0;
+    }
+    
+    
+    .menu_item_link {
+        text-decoration: none;
+    
+        transition: color .2s linear;
+    }
+    
+    .menu_item_link:hover {
+        text-decoration: underline;
+        color: red;
+        background-color: transparent;
+    }
+    .main_header {
+        margin-top: 0;
+    }
+    .work_block {
+        width: 30%;
+        height: 505px;
+    }
+
+    .menu__btn {
+        display: none;
+    }
+    .text_card {
+        line-height: 1.4;
+    }
+    .sidebar_left {
+        display: block;
+        padding-top: 10px;
+    } 
+
+    .sidebar_right {
+        padding-top: 10px
+    }
+}

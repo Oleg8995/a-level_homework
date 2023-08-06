@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Контактна інформація</legend>
+
+            <label for="name"></label><input type="range" min="1" max="5" id="name">
+
+            <label for="name">Ім’я <em>*</em></label><input type="text" id="name">
+            <label for="email">E-mail</label><input type="email" id="email">
+        </fieldset>
+
+        <textarea cols="60" rows="5">Текстова область</textarea>
+        <select>
+            <option>Січень</option>
+            <option>Лютий</option>
+            <option>Березень</option>
+            <option>Квітень</option>
+            <option>Травень</option>
+            <option>Червень</option>
+            <option>Липень</option>
+            <option>Серпень</option>
+            <option>Вересень</option>
+            <option>Жовтень</option>
+            <option>Листопад</option>
+            <option>Грудень</option>
+        </select>
+
+        <label>Якими браузерами ви користуєтесь?</label>
+            <select multiple>
+                <option>Google Chrome</option>
+                <option>Internet Explorer</option>
+                <option>Mozilla Firefox</option>
+                <option>Opera</option>
+                <option>Safari</option>
+            </select>
+
+
+
+        <button type="submit">Відправити</button>
+        <button type="reset">Відправити</button>
+        <input type="reset">
+    </form>
+    
+</body>
+</html>

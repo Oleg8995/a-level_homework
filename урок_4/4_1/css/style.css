@@ -1,0 +1,85 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.block {
+    width: 700px;
+    height: 600px;
+
+    padding: 10px;
+   
+    background-color: #0d5825;
+
+}
+
+.citate {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    color: white;
+}
+
+.signature {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.block_card {
+    position: relative;
+    height: 280px;
+
+    margin-top: 110px;
+}
+
+.card {
+    width: 150px;
+    height: 250px;
+    background-color: transparent;
+    border-radius: 6%;
+
+    transition: all .2s linear
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 25px rgb(43 42 44 / 75%);
+
+}
+
+.first_card {
+    position: absolute;
+    left: 225px;
+    bottom: 40px;
+    z-index: 0;
+    
+    transform: rotate(-20deg);
+
+}
+
+.second_card {
+    position: absolute;
+    left: 270px;
+    z-index: 1;
+
+    transform: rotate(-10deg);
+}
+
+.third_card {
+    position: absolute;
+    left: 330px;
+    bottom: 5px;
+    z-index: 2;
+
+    transform: rotate(10deg);
+}
